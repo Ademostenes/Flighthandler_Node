@@ -1,9 +1,12 @@
+
+
 @media only screen and (min-width: 720px) {
 
     main {
         background: linear-gradient( rgb(76, 131, 202), rgb(214, 229, 248));
         justify-content: center;
     }
+
 
     .fondo {
         display: flex;
