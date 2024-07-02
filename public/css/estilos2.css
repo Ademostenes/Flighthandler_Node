@@ -1,0 +1,74 @@
+.base {
+    display:flex;
+    width: 50%;
+    height:300px;
+    border-radius: 25px;
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 10px 0px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.controls {
+    display: flex; 
+    width: 10%;
+    height: 95%;
+    border-radius: 20px;
+    background-color: rgb(123, 157, 221);
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.controls:hover {
+    background-color: rgb(153, 175, 216);
+}
+
+.uno {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: rgb(255,255,255);
+    user-select: none;
+}
+
+.contenido {
+    display: flex; 
+    width: 80%;
+    height: 95%;
+    border-radius: 12px;
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.185) 0px 10px 10px 0px;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+.slider-container {
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container #promos {
+    scroll-snap-align:center;
+}

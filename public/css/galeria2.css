@@ -1,0 +1,50 @@
+.card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 12px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 3  ;
+    max-width: 900px;
+    margin-left: 100px;
+
+  }
+
+  .card li.landscape {
+    grid-column-end: span 2;
+  }
+
+  .card li img {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+  }
+  
+  .bloque:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .bloque {
+    display: flex;
+    width: 185px;
+    height: 185px;
+    transition: transform .3s;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    border-radius: 12.5px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.5) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.5) 0px 5px 5px 0px;
+  }
+
+
+
+
+

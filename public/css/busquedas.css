@@ -1,0 +1,406 @@
+@media only screen and (min-width: 720px) {
+
+form {
+    display: flex;
+    width: 100%;
+    transition: 0.25s;
+}
+
+input {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    border: none;
+    text-align:justify;
+    color: #b3b3b3;
+    background-color: rgb(255,255,255);
+}
+
+.dates {
+    width: 90%;
+}
+
+
+.cuadroBusq {
+    display: flex;
+    color:rgb(255,255,255);
+    border-radius: 80px;
+    width: 95%;
+    height:90px;
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.1) 0px 10px 10px 0px;
+    margin-top: 20px;
+    margin-left: 2.5%;
+    align-items: center;
+    justify-content: space-between;
+    filter: brightness(100%);
+    background-color: rgb(255,255,255);
+}
+
+.container {
+    display: block;
+    flex-direction: column;
+    width: 25%;
+    height: 80px;
+    border-right: 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-color: rgb(241, 238, 238);
+    margin-left: 2px;
+    margin-right: 2px;
+    border-style: solid;
+    padding-left: 10px;
+    color: rgb(0,0,0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.container2:hover {
+    filter: brightness(50%);
+}
+
+.containerIzq {
+    display: block;
+    flex-direction: column;
+    width: 25%;
+    height: 80px;
+    border-right: 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-color: rgb(241, 238, 238);
+    margin-left: 40px;
+    margin-right: 2px;
+    border-style: solid;
+    padding-left: 10px;
+    color: rgb(0,0,0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+#eDer {
+    margin-right: 5px;
+    border: 0px;
+    width: 100px;
+    background-color: rgb(37, 109, 204);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    align-items: center;
+    justify-items: center;
+    filter: brightness(100%);
+    user-select: none;
+}
+
+#eDer:hover {
+    filter: brightness(103%);
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.03) 0px 0px 8px 5px,
+    rgba(0, 0, 0, 0.2) 1px 2px 2px 0px;
+    margin-top: -1px;
+}
+
+#eDer:active {
+    margin-top: 1px;
+}
+
+#eDer:active > .boton {
+    margin-top: 28.5px;
+}
+
+p {
+
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(56, 135, 240);
+    font-weight: bolder;
+}
+
+.greyText {
+    color:rgb(202, 202, 202);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.boton {
+    color:rgb(255, 255, 255);
+    margin-top: 27.5px;
+    margin-left: 5%;
+}
+
+
+#cantPasaje {
+
+    text-align: center;
+}
+
+.tipoViaje {
+    display: flex;
+    color: rgb(56, 135, 240);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    justify-content: left;
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.radioB {
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+
+.selTipoViaje {
+    display: flex;
+    align-items: center;
+    align-content:start;
+    justify-content: left;
+}
+
+.selectores {
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;  
+    margin-left: 2px;
+    margin-right: 15px;
+}
+
+.frameBusquedas {
+    position:absolute;
+    flex-direction: column;
+    width: 25%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    box-shadow:
+    rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+    rgba(0, 0, 0, 0.2) 0px 0px 8px 0px,
+    rgba(0, 0, 0, 0.5) 0px 10px 10px 0px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+#origen {
+    display: none;
+}
+
+#destino {
+    display: none;
+    margin-left: 10px;
+}
+
+.listado {
+    height: 250px;
+    border:none;
+}
+
+.container:hover > .frameBusquedas {
+    filter: opacity(100%);
+}
+
+}   
+
+/* Arranca maquetado móvil devices*/
+
+@media only screen and (max-width:720px){
+
+    .cuadroBusq {
+        display: flex;
+        flex-direction: column;
+        color:rgb(255,255,255);
+        background-color: transparent;
+        border-radius: 0px;
+        width:100%;
+        height:auto;
+        margin-top: 10px;
+        margin-left: 0.5%;
+        padding-bottom: 20px;
+        align-items: center;
+        justify-items: left;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 130%;
+        height: 60px;
+        background-color: rgb(255,255,255);
+        margin-top: 10px;
+        cursor: pointer;
+        margin-left: -30px;
+        box-shadow:
+        rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+        rgba(0, 0, 0, 0.2) 0px 0px 8px 0px,
+        rgba(0, 0, 0, 0.5) 0px 10px 10px 0px;
+    }
+
+    .containerIzq {
+        display: flex;
+        flex-direction: column;
+        width: 130%;
+        height: 60px;
+        background-color: rgb(255,255,255);
+        margin-top: 10px;
+        cursor: pointer;
+        margin-left: -30px;
+        box-shadow:
+        rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+        rgba(0, 0, 0, 0.2) 0px 0px 8px 0px,
+        rgba(0, 0, 0, 0.5) 0px 10px 10px 0px;
+    }
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;
+        color: rgb(56, 135, 240);
+        font-weight: bolder;
+    }
+
+
+    #cantPasaje {
+        border-style: none;
+        border: none;
+        text-align: center;
+    }
+
+    input {
+        border-style: none;
+        margin-left: 10px;
+        color: rgb(112, 112, 112);
+        margin-right: 15px;
+        font-weight: bold;
+    }
+
+    .greyText {
+        color:rgb(112, 112, 112);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    #eDer {
+        user-select: none;
+        margin-left: 0px;
+        margin-top: 10px;
+        border-style: solid;
+        border:2px;
+        border-color: #b3b3b3;
+        background-color: rgb(86, 159, 228);
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        box-shadow: 0px 1px 0px hsl(212, 60%, 55%),
+                    0px 2px 0px hsl(212,60%,38%),
+                    0px 3px 0px hsl(212,60%,37%),
+                    0px 4px 0px hsl(212,60%,36%),
+                    0px 5px 0px hsl(212,60%,35%),
+                    0px 6px 0px hsl(212,60%,34%),
+                    0px 7px 0px hsl(212,60%,33%),
+                    0px 8px 0px hsl(212,60%,32%),
+                    0px 9px 0px hsl(212,60%,31%),
+                    0px 10px 0px hsl(212,60%,20%),
+                    0px 11px 10px #000;
+    }
+
+    #eDer:hover {
+        box-shadow: 0px 1px 0px hsl(212, 60%, 55%),
+                    0px 2px 0px hsl(212,60%,38%),
+                    0px 3px 0px hsl(212,60%,37%),
+                    0px 4px 0px hsl(212,60%,36%),
+                    0px 5px 0px hsl(212,60%,35%),
+                    0px 6px 0px hsl(212,60%,34%),
+                    0px 7px 0px hsl(212,60%,33%),
+                    0px 8px 0px hsl(212,60%,32%),
+                    0px 9px 0px hsl(212,60%,31%),
+                    0px 12px 0px hsl(212,60%,20%),
+                    0px 14px 10px #000;
+    }
+
+    #eDer:active {
+        margin-top: 13px;   
+        height: 38px;
+        box-shadow: 0px 1px 0px hsl(212, 60%, 55%),
+                    0px 2px 0px hsl(212,60%,38%),
+                    0px 3px 0px hsl(212,60%,37%),
+                    0px 4px 0px hsl(212,60%,36%),
+                    0px 5px 0px hsl(212,60%,20%),
+                    0px 14px 10px #5c5c5c,
+    }
+
+
+    .boton {
+        color: rgb(255, 255, 255);
+        font-size: large;
+        justify-self: center;
+        text-shadow: #b3b3b3;
+    }
+
+    .tipoViaje {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        align-content: center;
+        background-color: transparent;
+        margin-left: 0.5%;
+    }
+
+    .selectores {
+        color:rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 11px;  
+    }
+
+    .radioB {
+        margin-right: 0px;
+        margin-left: 5px;
+    }
+
+    .frameBusquedas {
+        position:absolute;
+        flex-direction: column;
+        margin-top: 65px;
+        width: 66%;
+        height: 250px;
+        background-color: rgb(255, 255, 255);
+        box-shadow:
+        rgba(0, 0, 0, 0.024) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0.05) 0px 1px 0px 0px,
+        rgba(0, 0, 0, 0.2) 0px 0px 8px 0px,
+        rgba(0, 0, 0, 0.5) 0px 10px 10px 0px;
+        z-index: 2;
+        border-radius: 15px;
+    }
+
+    .listado {
+        height: 250px;
+    }
+
+    .selTipoViaje {
+        display: flex;
+        margin-top: 10px;
+        align-items: center;
+        align-content:start;
+        justify-content: center;
+    }
+
+}
