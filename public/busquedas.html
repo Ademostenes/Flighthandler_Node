@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busquedas</title>
+    <link rel="stylesheet" href="./css/busquedas.css">
+</head>
+<body>
+    <div class="tipoViaje">
+        <form class="selTipoViaje">
+            <input class="radioB" type="radio" name="tipoVuelo" value="idayvuelta" checked="checked" id="idaVuelta" onclick="cambiaBusqueda();">
+            <label class="selectores">Ida y Vuelta</label>
+            <input class="radioB" type="radio" name="tipoVuelo" value="soloida" id="soloIda" onclick="cambiaBusqueda();">
+            <label class="selectores">Solo ida</label>
+        </form> 
+    </div>
+    <div class="cuadroBusq">
+        <form>
+            <div class="containerIzq" onclick='capaBusquedas("origen")'> 
+                <div class="container2">
+                <p>Origen</p>
+                <p class="greyText">Ciudad de Córdoba, Córdoba, Argentina.</p>
+                </div>
+                <div class="frameBusquedas" id="origen">
+                    <iframe class="listado" src="./models/modelosListas.html"></iframe>
+                </div>
+            </div>
+            <div class="containerIzq" onclick='capaBusquedas("destino")'> 
+                <div class="container2">
+                <p>Destino</p>
+                <p class="greyText">Ciudad Autónoma de Buenos Aires, Argentina.</p>
+                </div>
+                <div class="frameBusquedas" id="destino">
+                    <iframe class="listado" src="./models/modelosListas.html"></iframe>
+                </div>
+            </div>
+            <div class="container">
+                <p>Fecha salida</p>
+                <input type="date" class="dates">
+            </div>
+            <div class="container" id="contRegreso">
+                <p>Fecha regreso</p>
+                <input type="date" class="dates">
+            </div>
+            <div class="container" >
+                <p>Cantidad pasajeros</p>
+                <input type="number" id="cantPasaje" value=1 min=1 class="dates">
+            </div>
+            <div class="container" id="eDer">
+                <p class="boton">Buscar</p>
+            </div>
+        </form>
+        <script src="./Js/funcBusquedas.js"></script>
+    </div>
+</body>
+</html>
