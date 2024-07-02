@@ -1,13 +1,14 @@
 
 const express = require('express');
+const bodyParser = require('body-parser');
 const userRoutes = require('./public/routes/userRoutes');
 
 
 const app = express();
-
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/user',userRoutes);
-app.use('/register', userRoutes);
+app.post('/register', userRoutes);
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
@@ -37,6 +38,12 @@ app.get('/paquetes', (req, res) => {
 app.get('/paquetes.html', (req, res) => {
        res.sendFile(__dirname + '/public/404.html');
        })
+
+app.get('/listado', (req, res) => {
+        res.sendFile(__dirname + '/public/listado.html');
+        })
+
+
 
 
 
